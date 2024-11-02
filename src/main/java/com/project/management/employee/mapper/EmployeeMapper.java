@@ -9,10 +9,10 @@ public class EmployeeMapper {
 
 
     public static EmployeeDto mapToEmployeeDto(Employee employee){
-        return EmployeeDto.builder().id(employee.getId()).emailId(employee.getEmailId()).lastName(employee.getLastName()).firstName(employee.getLastName()).build();
+        return EmployeeDto.builder().id(employee.getId()).emailId(employee.getEmailId()).lastName(employee.getLastName()).firstName(employee.getFirstName()).build();
     }
 
     public static Employee mapToEmployee(EmployeeDto employeeDto){
-        return Employee.builder().id(employeeDto.getId()).emailId(employeeDto.getEmailId()).lastName(employeeDto.getLastName()).firstName(employeeDto.getLastName()).build();
+        return Employee.builder().id(employeeDto.getId()).emailId(employeeDto.getEmailId()).lastName(employeeDto.getLastName()).firstName(employeeDto.getFirstName()).build();
     }
 }

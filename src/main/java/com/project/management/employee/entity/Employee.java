@@ -1,14 +1,17 @@
 package com.project.management.employee.entity;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-@Builder
 @Entity
 @Table(name = "employee")
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Employee {
 
     @Id
